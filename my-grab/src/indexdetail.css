@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.detail {
+  display: inline-block;
+}
+
+/* Header Detail */
+.header_detail {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000; /* Để đảm bảo header_detail luôn ở trên cùng */
+  display: flex;
+  justify-content: space-between; /* Cân đối nội dung trong header_detail */
+}
+.all {
+  margin-left: 100px;
+}
+.restaurant {
+  margin: 0 100px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.restaurant p {
+  padding: 10px;
+  font-size: 20px;
+}
+.restaurant p:nth-of-type(1) {
+  color: #0e9be1;
+}
+
+.restaurant p:nth-of-type(3) {
+  color: #0e9be1;
+}
+
+.name_store {
+  font-weight: bold;
+  color: #333;
+}
+
+.rice {
+  color: #666;
+  margin: 10px;
+}
+.DanhGia {
+  display: flex;
+  margin: 10px;
+}
+
+.DanhGia div,
+.Voucher2,
+.voucher1 {
+  display: flex;
+  align-items: center;
+}
+.Clock {
+  display: flex;
+}
+.DanhGia p,
+.Clock p,
+.voucher1 p,
+.Voucher2 p,
+.calendar p {
+  margin: 0 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.DanhGia,
+.Clock,
+.voucher1,
+.Voucher2,
+.calendar {
+  margin: 20px 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.calendar,
+.calendericon {
+  display: flex;
+}
+
+.icon,
+.icon2 {
+  margin-right: 5px;
+}
+
+.faStar {
+  color: yellow;
+}
+
+.faTicket {
+  color: blue;
+}
+
+.faClock,
+.faCalendar,
+.faAngleDown {
+  color: #333;
+}
+
+.nav1 {
+  position: sticky;
+  top: 85px;
+  background-color: white;
+  z-index: 999;
+  display: inline-block;
+  width: 100%;
+}
+.nav1 ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+/* Định dạng cho các mục trong menu */
+.nav1 ul li {
+  cursor: pointer;
+  padding: 10px; /* Khoảng cách cho mục menu */
+  font-size: 1.14285714rem;
+  line-height: 1.5;
+  margin: 20px 20px;
+}
+
+/* Định dạng cho mục đang hoạt động */
+.nav1 ul li.active {
+  color: #00b14f;
+  font-weight: 500;
+}
+
+.active {
+  color: red; /* Màu sắc của mục menu nổi bật */
+  font-weight: bold; /* Độ đậm của văn bản */
+}
+/* Phần product */
+.product {
+  display: inline-block;
+}
+.product div {
+  margin-bottom: 30px;
+}
+
+/* gio hang */
+.app-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: brown;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 70%;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+  z-index: 1005;
+  overflow-x: hidden;
+}
+.cart button {
+  margin: 30px 20px;
+}
+
+.cart.open {
+  display: block; /* Hiển thị giỏ hàng khi được mở */
+  transform: translateX(0); /* Đặt vị trí giỏ hàng bên cạnh màn hình */
+  width: 516px !important;
+}
+
+.cart.open {
+  transform: translateX(0);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1004;
+  display: none;
+  opacity: 0;
+}
+.overlay.show {
+  display: block;
+  opacity: 0.1;
+}
+.app-container {
+  display: flex;
+  flex-direction: row;
+  width: 314px;
+  border-radius: 4px;
+  padding: 16px;
+  margin-left: 30px;
+  height: 150px;
+  margin-right: 40px;
+  background-color: white;
+}
+.app-container1 img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.app-container div {
+  margin-top: 0px;
+}
+.app-container1 {
+  margin-right: 30px;
+}
+.app-container2 div {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 10px;
+}
+.buttonadd {
+  background-color: #00b14f;
+  color: white;
+  /* border: 1px rgb(223, 223, 223) solid; */
+  height: 25px;
+  border-radius: 50%;
+  width: 25px;
+}
+.app-container2 div p {
+  margin-right: 30px;
+}
+.SanPham {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 490px;
+  height: 272px;
+  border-top: 1px black solid;
+  border-bottom: 10px rgb(182, 180, 180) solid;
+  margin-top: 10px;
+}
+.SanPham img {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+}
+.SanPham1 {
+  margin: -12px 10px;
+}
+.CheckBox {
+  margin: 10px 30px;
+}
+.CheckBoxMiNi {
+  border-bottom: 1px black solid;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+.eagle {
+  background-color: #f6f6f6;
+  padding-left: 100px;
+}
+.bag2 {
+  position: sticky; /* Vị trí tuyệt đối bên trong cart */
+
+  left: 0; /* Bắt đầu từ bên trái */
+  width: 100%; /* Chiều rộng bằng chiều rộng của phần cart */
+
+  background-color: #0e9be1; /* Màu nền */
+  overflow: hidden; /* Ngăn chặn tràn nội dung */
+}
